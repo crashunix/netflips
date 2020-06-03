@@ -1,6 +1,6 @@
 import styled from 'styled-components/native';
 
-export const Wrapper = styled.SafeAreaView`
+export const Wrapper = styled.View`
 background: #212121;
 flex: 1;
 `;
@@ -11,6 +11,7 @@ export const Header = styled.View`
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+    z-index: 999;
 `;
 
 export const Container = styled.ScrollView``;

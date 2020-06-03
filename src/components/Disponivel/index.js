@@ -6,7 +6,7 @@ import { AntDesign, Entypo } from '@expo/vector-icons';
 import { Container, Movie, Img, Button, Actions, Label } from './styles';
 import { View, Text } from 'react-native';
 
-import img1 from '../../images/after.jpg';
+import img1 from '../../images/21-bridges.jpg';
 
 import SectionTitle from '../../components/SectionTitle';
 

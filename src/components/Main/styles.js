@@ -1,15 +1,22 @@
 import styled from 'styled-components/native';
 
-export const Movie = styled.View`
+import {LinearGradient} from 'expo-linear-gradient';
+
+export const Movie = styled.View `
     width: 100%;
     /* height: 268px; */
 `;
 
-export const Container = styled.View `
-    padding: 10px 0;
+export const Container = styled.View`
+    margin-top: -50px;
 `;
 
-export const Img = styled.Image `
+export const Img = styled.View `
+    width: 100%;
+    height: 405px;
+`;
+
+export const Fade = styled(LinearGradient)`
     width: 100%;
     height: 600px;
 `;
@@ -36,4 +43,5 @@ export const Actions = styled.View `
     justify-content: space-around;
     align-items: center;
     padding: 10px 0;
+    margin-top: -50px;
 `;

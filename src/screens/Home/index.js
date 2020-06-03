@@ -5,7 +5,9 @@ import { MaterialCommunityIcons, AntDesign } from '@expo/vector-icons';
 import { Wrapper, Header, Container, Logo, Nav, NavItem } from './styles';
 
 import EmAlta from '../../components/EmAlta';
+
 import SimpleList from '../../components/SimpleList';
+import Main from '../../components/Main';
 import Disponivel from '../../components/Disponivel';
 
 import logo from '../../images/Netflix-logo2.png';
@@ -19,164 +21,119 @@ import img6 from '../../images/joker.jpg';
 import img7 from '../../images/1917.jpg';
 
 
-const sections = [
-    {
-        key: String(Math.random()),
-        title: 'Em alta',
-        movies: [
-            {
-                key: String(Math.random()),
-                img: img1,
-                label: 'Doações',
-                mark: true,
-                newEps: true,
-            },
-            {
-                key: String(Math.random()),
-                img: img1,
-                label: 'Doações',
-                mark: true,
-                newEps: false,
-            },
-            {
-                key: String(Math.random()),
-                img: img1,
-                label: 'Doações',
-                mark: true,
-                newEps: false,
-            },
-            {
-                key: String(Math.random()),
-                img: img1,
-                label: 'Doações',
-                mark: true,
-                newEps: false,
-            },
-            {
-                key: String(Math.random()),
-                img: img1,
-                label: 'Doações',
-                mark: true,
-                newEps: false,
-            },
-            {
-                key: String(Math.random()),
-                img: img1,
-                label: 'Doações',
-                mark: true,
-                newEps: false,
-            },
-        ],
-    },
-    {
-        key: String(Math.random()),
-        title: 'Séries emocionantes',
-        movies: [
-            {
-                key: String(Math.random()),
-                img: img1,
-                label: 'Doações',
-                mark: true,
-                newEps: false,
-            },
-        ],
-    },
-    {
-        key: String(Math.random()),
-        title: 'Comédias para a TV',
-        movies: [
-            {
-                key: String(Math.random()),
-                img: img1,
-                label: 'Doações',
-                mark: true,
-                newEps: false,
-            },
-        ],
-    },
-    {
-        key: String(Math.random()),
-        title: 'Populares na Netflix',
-        movies: [
-            {
-                key: String(Math.random()),
-                img: img1,
-                label: 'Doações',
-                mark: true,
-                newEps: false,
-            },
-        ],
-    },
-    {
-        key: String(Math.random()),
-        title: 'Séries emocionantes',
-        movies: [
-            {
-                key: String(Math.random()),
-                img: img1,
-                label: 'Doações',
-                mark: true,
-                newEps: false,
-            },
-            {
-                key: String(Math.random()),
-                img: img2,
-                label: 'Doações',
-                mark: false,
-                newEps: true,
-            },
-            {
-                key: String(Math.random()),
-                img: img3,
-                label: 'Doações',
-                mark: false,
-                newEps: false,
-            },
-            {
-                key: String(Math.random()),
-                img: img4,
-                label: 'Doações',
-                mark: false,
-                newEps: false,
-            },
-            {
-                key: String(Math.random()),
-                img: img5,
-                label: 'Doações',
-                mark: true,
-                newEps: false,
-            },
-            {
-                key: String(Math.random()),
-                img: img6,
-                label: 'Doações',
-                mark: false,
-                newEps: false,
-            },
-            {
-                key: String(Math.random()),
-                img: img7,
-                label: 'Doações',
-                mark: true,
-                newEps: false,
-            },
-        ],
-    }
-];
+const emAlta =
+{
+    key: String(Math.random()),
+    title: 'Em alta',
+    movies: [
+        {
+            key: String(Math.random()),
+            img: img5,
+            label: 'Doações',
+            mark: true,
+            newEps: true,
+        },
+        {
+            key: String(Math.random()),
+            img: img3,
+            label: 'Doações',
+            mark: true,
+            newEps: false,
+        },
+        {
+            key: String(Math.random()),
+            img: img4,
+            label: 'Doações',
+            mark: true,
+            newEps: false,
+        },
+        {
+            key: String(Math.random()),
+            img: img1,
+            label: 'Doações',
+            mark: true,
+            newEps: false,
+        },
+        {
+            key: String(Math.random()),
+            img: img2,
+            label: 'Doações',
+            mark: true,
+            newEps: false,
+        },
+        {
+            key: String(Math.random()),
+            img: img6,
+            label: 'Doações',
+            mark: true,
+            newEps: false,
+        },
+    ],
+};
+
+const novoNaNetflix =
+{
+    key: String(Math.random()),
+    title: 'Recente na Netflix',
+    movies: [
+        {
+            key: String(Math.random()),
+            img: img5,
+            label: 'Doações',
+            mark: true,
+            newEps: true,
+        },
+        {
+            key: String(Math.random()),
+            img: img3,
+            label: 'Doações',
+            mark: true,
+            newEps: false,
+        },
+        {
+            key: String(Math.random()),
+            img: img4,
+            label: 'Doações',
+            mark: true,
+            newEps: false,
+        },
+        {
+            key: String(Math.random()),
+            img: img1,
+            label: 'Doações',
+            mark: true,
+            newEps: false,
+        },
+        {
+            key: String(Math.random()),
+            img: img2,
+            label: 'Doações',
+            mark: true,
+            newEps: false,
+        },
+        {
+            key: String(Math.random()),
+            img: img6,
+            label: 'Doações',
+            mark: true,
+            newEps: false,
+        },
+    ],
+};
 
 export default function Home() {
     return <Wrapper>
         <Container>
             <Header>
                 <Logo source={logo}></Logo>
-                    <NavItem>Séries</NavItem>
-                    <NavItem>Filmes</NavItem>
-                    <NavItem>Minha lista</NavItem>
+                <NavItem>Séries</NavItem>
+                <NavItem>Filmes</NavItem>
+                <NavItem>Minha lista</NavItem>
             </Header>
+            <Main></Main>
+            <SimpleList key={emAlta.key} sectionTitle={emAlta.title} data={emAlta.movies}></SimpleList>
             <Disponivel></Disponivel>
-            {sections.map((section) => (
-                <SimpleList key={section.key} sectionTitle={section.title} data={section.movies}></SimpleList>
-            ))}
+            <SimpleList key={novoNaNetflix.key} sectionTitle={novoNaNetflix.title} data={novoNaNetflix.movies}></SimpleList>
         </Container>
     </Wrapper>
 }
