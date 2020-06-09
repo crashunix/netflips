@@ -12,7 +12,7 @@ export default function Main(props) {
     return (<>
         <Container>
             <Movie>
-                <ImageBackground source={props.data.img} style={styles.image} >
+                <ImageBackground source={{uri: props.data.img}} style={styles.image} >
                     <Fade colors={['rgba(255,255,255,0)', '#000']}>
                     </Fade>
                 </ImageBackground>

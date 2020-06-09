@@ -11,7 +11,7 @@ export default function Movie(props) {
             {props.mark ? (
                 <Mark source={logo} />
             ) : <></>}
-            <Img source={props.image} />
+            <Img source={{uri: props.image}} />
             {props.newEps ? (
                 <NewEps>Novos espisódios</NewEps>
             ) : <></>}

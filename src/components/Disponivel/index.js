@@ -15,7 +15,7 @@ export default function Disponivel(props) {
         <SectionTitle>Já disponível</SectionTitle>
         <Container>
             <Movie>
-                <Img source={props.data.img} />
+                <Img source={{uri: props.data.img}} />
                 <Actions>
                     <Button light><AntDesign name="caretright" /><Label light>Assistir</Label></Button>
                     <Button><Entypo name="plus" color="#fff" /><Label>Minha lista</Label></Button>
