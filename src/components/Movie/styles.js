@@ -26,7 +26,7 @@ export const NewEps = styled.Text`
     border-radius: 3px;
     position: absolute;
     top: 128px;
-    font-size: 12px;
+    font-size: 10px;
     text-align: center;
     color: #fff;
     font-weight: bold;

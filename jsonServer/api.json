@@ -1,0 +1,130 @@
+{
+    "rows": [
+        {
+            "id": 1,
+            "title": "Principal",
+            "slug": "principal",
+            "type": "main",
+            "movie": {
+                "id": 1,
+                "img": "https://d1csarkz8obe9u.cloudfront.net/posterpreviews/space-movie-poster-design-template-18133e937d93002c68b4649ea234d75f_screen.jpg?ts=1573539500",
+                "label": "Doações",
+                "mark": true,
+                "newEps": true
+            }
+        },
+        {
+            "id": 2,
+            "title": "Em alta",
+            "slug": "emalta",
+            "type": "list",
+            "movies": [
+                {
+                    "id": 1,
+                    "img": "https://m.media-amazon.com/images/M/MV5BYjgwM2JhNjItNjFlYi00MjYwLTlhYWEtZjk2NzcwYmZmYTg0XkEyXkFqcGdeQXVyNjU1NzU3MzE@._V1_.jpg",
+                    "label": "Doações",
+                    "mark": true,
+                    "newEps": true
+                },
+                {
+                    "id": 2,
+                    "img": "https://m.media-amazon.com/images/M/MV5BYjgwM2JhNjItNjFlYi00MjYwLTlhYWEtZjk2NzcwYmZmYTg0XkEyXkFqcGdeQXVyNjU1NzU3MzE@._V1_.jpg",
+                    "label": "Doações",
+                    "mark": true,
+                    "newEps": false
+                },
+                {
+                    "id": 3,
+                    "img": "https://m.media-amazon.com/images/M/MV5BYjgwM2JhNjItNjFlYi00MjYwLTlhYWEtZjk2NzcwYmZmYTg0XkEyXkFqcGdeQXVyNjU1NzU3MzE@._V1_.jpg",
+                    "label": "Doações",
+                    "mark": true,
+                    "newEps": false
+                },
+                {
+                    "id": 4,
+                    "img": "https://m.media-amazon.com/images/M/MV5BYjgwM2JhNjItNjFlYi00MjYwLTlhYWEtZjk2NzcwYmZmYTg0XkEyXkFqcGdeQXVyNjU1NzU3MzE@._V1_.jpg",
+                    "label": "Doações",
+                    "mark": true,
+                    "newEps": false
+                },
+                {
+                    "id": 5,
+                    "img": "https://m.media-amazon.com/images/M/MV5BYjgwM2JhNjItNjFlYi00MjYwLTlhYWEtZjk2NzcwYmZmYTg0XkEyXkFqcGdeQXVyNjU1NzU3MzE@._V1_.jpg",
+                    "label": "Doações",
+                    "mark": true,
+                    "newEps": false
+                },
+                {
+                    "id": 6,
+                    "img": "https://m.media-amazon.com/images/M/MV5BYjgwM2JhNjItNjFlYi00MjYwLTlhYWEtZjk2NzcwYmZmYTg0XkEyXkFqcGdeQXVyNjU1NzU3MzE@._V1_.jpg",
+                    "label": "Doações",
+                    "mark": true,
+                    "newEps": false
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "title": "Disponível na NetFlix",
+            "slug": "disponivelnanetflix",
+            "type": "available",
+            "movie": {
+                "id": 7,
+                "img": "https://store.nintendo.com.br/media/catalog/product/cache/1aff59ff6f21b2058ac5563c018426d7/z/e/zeldabow_hero_2.jpg",
+                "label": "Doações",
+                "mark": true,
+                "newEps": true
+            }
+        },
+        {
+            "id": 4,
+            "title": "Novos na Netflix",
+            "slug": "novosnanetflix",
+            "type": "list",
+            "movies": [
+                {
+                    "id": 8,
+                    "img": "https://store.nintendo.com.br/media/catalog/product/cache/1aff59ff6f21b2058ac5563c018426d7/z/e/zeldabow_hero_2.jpg",
+                    "label": "Doações",
+                    "mark": true,
+                    "newEps": true
+                },
+                {
+                    "id": 9,
+                    "img": "https://m.media-amazon.com/images/M/MV5BYjgwM2JhNjItNjFlYi00MjYwLTlhYWEtZjk2NzcwYmZmYTg0XkEyXkFqcGdeQXVyNjU1NzU3MzE@._V1_.jpg",
+                    "label": "Doações",
+                    "mark": true,
+                    "newEps": false
+                },
+                {
+                    "id": 10,
+                    "img": "https://m.media-amazon.com/images/M/MV5BYjgwM2JhNjItNjFlYi00MjYwLTlhYWEtZjk2NzcwYmZmYTg0XkEyXkFqcGdeQXVyNjU1NzU3MzE@._V1_.jpg",
+                    "label": "Doações",
+                    "mark": true,
+                    "newEps": false
+                },
+                {
+                    "id": 11,
+                    "img": "https://m.media-amazon.com/images/M/MV5BYjgwM2JhNjItNjFlYi00MjYwLTlhYWEtZjk2NzcwYmZmYTg0XkEyXkFqcGdeQXVyNjU1NzU3MzE@._V1_.jpg",
+                    "label": "Doações",
+                    "mark": true,
+                    "newEps": false
+                },
+                {
+                    "id": 12,
+                    "img": "https://m.media-amazon.com/images/M/MV5BYjgwM2JhNjItNjFlYi00MjYwLTlhYWEtZjk2NzcwYmZmYTg0XkEyXkFqcGdeQXVyNjU1NzU3MzE@._V1_.jpg",
+                    "label": "Doações",
+                    "mark": true,
+                    "newEps": false
+                },
+                {
+                    "id": 13,
+                    "img": "https://m.media-amazon.com/images/M/MV5BYjgwM2JhNjItNjFlYi00MjYwLTlhYWEtZjk2NzcwYmZmYTg0XkEyXkFqcGdeQXVyNjU1NzU3MzE@._V1_.jpg",
+                    "label": "Doações",
+                    "mark": true,
+                    "newEps": false
+                }
+            ]
+        }
+    ]
+}

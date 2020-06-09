@@ -8,20 +8,12 @@ import { View, Text, ImageBackground, StyleSheet } from 'react-native';
 
 import img1 from '../../images/1004905453.webp';
 
-const movie = {
-    key: String(Math.random()),
-    img: img1,
-    label: 'Doações',
-    mark: true,
-    newEps: true,
-};
-
-export default function Main() {
+export default function Main(props) {
     return (<>
         <Container>
             <Movie>
-                <ImageBackground source={movie.img} style={styles.image} >
-                    <Fade colors={['rgba(255,255,255,0)', '#212121']}>
+                <ImageBackground source={props.data.img} style={styles.image} >
+                    <Fade colors={['rgba(255,255,255,0)', '#000']}>
                     </Fade>
                 </ImageBackground>
 

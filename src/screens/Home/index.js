@@ -1,10 +1,8 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Text, View } from 'react-native';
 import { MaterialCommunityIcons, AntDesign } from '@expo/vector-icons';
 
-import { Wrapper, Header, Container, Logo, Nav, NavItem } from './styles';
-
-import EmAlta from '../../components/EmAlta';
+import { Wrapper, Header, Container, Logo, Nav, NavItem, NoConnection } from './styles';
 
 import SimpleList from '../../components/SimpleList';
 import Main from '../../components/Main';
@@ -12,128 +10,54 @@ import Disponivel from '../../components/Disponivel';
 
 import logo from '../../images/Netflix-logo2.png';
 
-import img1 from '../../images/the-astronaut.jpg';
-import img2 from '../../images/movie-title.jpg';
-import img3 from '../../images/21-bridges.jpg';
-import img4 from '../../images/replicas.jpg';
-import img5 from '../../images/after.jpg';
-import img6 from '../../images/joker.jpg';
-import img7 from '../../images/1917.jpg';
+class Home extends Component {
 
+    constructor() {
+        super();
+        this.state = {
+            rows: false,
+        };
+    }
 
-const emAlta =
-{
-    key: String(Math.random()),
-    title: 'Em alta',
-    movies: [
-        {
-            key: String(Math.random()),
-            img: img5,
-            label: 'Doações',
-            mark: true,
-            newEps: true,
-        },
-        {
-            key: String(Math.random()),
-            img: img3,
-            label: 'Doações',
-            mark: true,
-            newEps: false,
-        },
-        {
-            key: String(Math.random()),
-            img: img4,
-            label: 'Doações',
-            mark: true,
-            newEps: false,
-        },
-        {
-            key: String(Math.random()),
-            img: img1,
-            label: 'Doações',
-            mark: true,
-            newEps: false,
-        },
-        {
-            key: String(Math.random()),
-            img: img2,
-            label: 'Doações',
-            mark: true,
-            newEps: false,
-        },
-        {
-            key: String(Math.random()),
-            img: img6,
-            label: 'Doações',
-            mark: true,
-            newEps: false,
-        },
-    ],
-};
+    async componentDidMount() {
+        const response = await fetch('http://192.168.1.135:3000/rows');
+        const data = await response.json(); 
+        this.setState({ rows: data });
+    }
 
-const novoNaNetflix =
-{
-    key: String(Math.random()),
-    title: 'Recente na Netflix',
-    movies: [
-        {
-            key: String(Math.random()),
-            img: img5,
-            label: 'Doações',
-            mark: true,
-            newEps: true,
-        },
-        {
-            key: String(Math.random()),
-            img: img3,
-            label: 'Doações',
-            mark: true,
-            newEps: false,
-        },
-        {
-            key: String(Math.random()),
-            img: img4,
-            label: 'Doações',
-            mark: true,
-            newEps: false,
-        },
-        {
-            key: String(Math.random()),
-            img: img1,
-            label: 'Doações',
-            mark: true,
-            newEps: false,
-        },
-        {
-            key: String(Math.random()),
-            img: img2,
-            label: 'Doações',
-            mark: true,
-            newEps: false,
-        },
-        {
-            key: String(Math.random()),
-            img: img6,
-            label: 'Doações',
-            mark: true,
-            newEps: false,
-        },
-    ],
-};
+    render() {
 
-export default function Home() {
-    return <Wrapper>
-        <Container>
-            <Header>
-                <Logo source={logo}></Logo>
-                <NavItem>Séries</NavItem>
-                <NavItem>Filmes</NavItem>
-                <NavItem>Minha lista</NavItem>
-            </Header>
-            <Main></Main>
-            <SimpleList key={emAlta.key} sectionTitle={emAlta.title} data={emAlta.movies}></SimpleList>
-            <Disponivel></Disponivel>
-            <SimpleList key={novoNaNetflix.key} sectionTitle={novoNaNetflix.title} data={novoNaNetflix.movies}></SimpleList>
-        </Container>
-    </Wrapper>
+        const { rows } = this.state;
+
+        var content = '';
+        if(rows) {
+            content = rows.map((item) => {
+                if (item.type == 'list') {
+                    return (<SimpleList key={item.id} sectionTitle={item.title} data={item.movies}></SimpleList>);
+                } else if (item.type == 'available') {
+                    return (<Disponivel key={item.id} data={item.movie}></Disponivel>);
+                } else if (item.type == 'main') {
+                    return (<Main key={item.id} data={item.movie}></Main>);
+                }
+            });
+        } else {
+            content = <NoConnection>Não foi possível se conectar à Netflips</NoConnection>
+        }
+
+        return (
+            <Wrapper>
+                <Container>
+                    <Header>
+                        <Logo source={logo}></Logo>
+                        <NavItem>Séries</NavItem>
+                        <NavItem>Filmes</NavItem>
+                        <NavItem>Minha lista</NavItem>
+                    </Header>
+                    {content}
+                </Container>
+            </Wrapper>
+        );
+    }
 }
+
+export default Home;

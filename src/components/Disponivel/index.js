@@ -10,20 +10,12 @@ import img1 from '../../images/21-bridges.jpg';
 
 import SectionTitle from '../../components/SectionTitle';
 
-const movie = {
-    key: String(Math.random()),
-    img: img1,
-    label: 'Doações',
-    mark: true,
-    newEps: true,
-};
-
-export default function Disponivel() {
+export default function Disponivel(props) {
     return (<>
         <SectionTitle>Já disponível</SectionTitle>
         <Container>
             <Movie>
-                <Img source={movie.img} />
+                <Img source={props.data.img} />
                 <Actions>
                     <Button light><AntDesign name="caretright" /><Label light>Assistir</Label></Button>
                     <Button><Entypo name="plus" color="#fff" /><Label>Minha lista</Label></Button>
