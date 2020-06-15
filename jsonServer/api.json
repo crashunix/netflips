@@ -7,7 +7,7 @@
             "type": "main",
             "movie": {
                 "id": 1,
-                "img": "https://d1csarkz8obe9u.cloudfront.net/posterpreviews/space-movie-poster-design-template-18133e937d93002c68b4649ea234d75f_screen.jpg?ts=1573539500",
+                "img": "https://upload.wikimedia.org/wikipedia/en/4/49/The_Dark_Tower_teaser_poster.jpg",
                 "label": "Doações",
                 "mark": true,
                 "newEps": true
@@ -119,6 +119,56 @@
                 },
                 {
                     "id": 13,
+                    "img": "https://m.media-amazon.com/images/M/MV5BYjgwM2JhNjItNjFlYi00MjYwLTlhYWEtZjk2NzcwYmZmYTg0XkEyXkFqcGdeQXVyNjU1NzU3MzE@._V1_.jpg",
+                    "label": "Doações",
+                    "mark": true,
+                    "newEps": false
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "title": "Suspense",
+            "slug": "suspense",
+            "type": "list",
+            "movies": [
+                {
+                    "id": 1,
+                    "img": "https://m.media-amazon.com/images/M/MV5BYjgwM2JhNjItNjFlYi00MjYwLTlhYWEtZjk2NzcwYmZmYTg0XkEyXkFqcGdeQXVyNjU1NzU3MzE@._V1_.jpg",
+                    "label": "Doações",
+                    "mark": true,
+                    "newEps": true
+                },
+                {
+                    "id": 2,
+                    "img": "https://m.media-amazon.com/images/M/MV5BYjgwM2JhNjItNjFlYi00MjYwLTlhYWEtZjk2NzcwYmZmYTg0XkEyXkFqcGdeQXVyNjU1NzU3MzE@._V1_.jpg",
+                    "label": "Doações",
+                    "mark": true,
+                    "newEps": false
+                },
+                {
+                    "id": 3,
+                    "img": "https://m.media-amazon.com/images/M/MV5BYjgwM2JhNjItNjFlYi00MjYwLTlhYWEtZjk2NzcwYmZmYTg0XkEyXkFqcGdeQXVyNjU1NzU3MzE@._V1_.jpg",
+                    "label": "Doações",
+                    "mark": false,
+                    "newEps": true
+                },
+                {
+                    "id": 4,
+                    "img": "https://m.media-amazon.com/images/M/MV5BYjgwM2JhNjItNjFlYi00MjYwLTlhYWEtZjk2NzcwYmZmYTg0XkEyXkFqcGdeQXVyNjU1NzU3MzE@._V1_.jpg",
+                    "label": "Doações",
+                    "mark": true,
+                    "newEps": false
+                },
+                {
+                    "id": 5,
+                    "img": "https://m.media-amazon.com/images/M/MV5BYjgwM2JhNjItNjFlYi00MjYwLTlhYWEtZjk2NzcwYmZmYTg0XkEyXkFqcGdeQXVyNjU1NzU3MzE@._V1_.jpg",
+                    "label": "Doações",
+                    "mark": true,
+                    "newEps": false
+                },
+                {
+                    "id": 6,
                     "img": "https://m.media-amazon.com/images/M/MV5BYjgwM2JhNjItNjFlYi00MjYwLTlhYWEtZjk2NzcwYmZmYTg0XkEyXkFqcGdeQXVyNjU1NzU3MzE@._V1_.jpg",
                     "label": "Doações",
                     "mark": true,

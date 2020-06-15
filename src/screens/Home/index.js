@@ -20,7 +20,7 @@ class Home extends Component {
     }
 
     async componentDidMount() {
-        const response = await fetch('http://192.168.1.135:3000/rows');
+        const response = await fetch('http://localhost:3000/rows');
         const data = await response.json(); 
         this.setState({ rows: data });
     }
